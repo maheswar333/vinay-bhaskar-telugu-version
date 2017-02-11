@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <ImageView
+                android:id="@+id/bioImg"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@mipmap/bio"/>
+
+            <LinearLayout
+                android:id="@+id/titleLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bioImg"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/colorControlActivated"
+                android:minHeight="?actionBarSize">
+
+                <TextView
+                    android:id="@+id/name_t"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="Dasyam Vinay Bhaskar"
+                    android:textColor="#EEEEEE"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="(MLA, Warangal West)"
+                    android:textColor="#EEEEEE"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    />
+            </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/textLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_below="@id/titleLay">
+
+    <TextView
+        android:id="@+id/date_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/biography1"
+
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        />
+
+        <TextView
+            android:id="@+id/date_news2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/biography2"
+            android:layout_below="@id/date_news"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            />
+
+            <TextView
+                android:id="@+id/date_news3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/biography3"
+                android:layout_below="@id/date_news2"
+                android:layout_marginTop="10dp"
+
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                />
+        </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
